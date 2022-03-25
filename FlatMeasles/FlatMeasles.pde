@@ -4,7 +4,7 @@
 fullScreen(); //displayWidth, displayHeight 
 //Landscape, not square or portrait 
 println (width, height, displayWidth, displayHeight); //Verification of values
-//Display Orientation
+//Display Orientation: a few comparisons for IFS
 //Computer TElls us the orientation, important for Cell Phone Orientation
 //if ( width >= height) {println("Landscape or Square");} else {println("Portrait");}
 String orientation = ( width >= height ) ? "Landscape or Square": "Portrati"; //Ternary Operator, repeats IF-ELSE
@@ -23,7 +23,8 @@ if ( orientation=="Landscape or Square") {
 //
 //Face
 //Center a circle on display orientation
-rect();
+rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+ellipse(faceX, faceY, faceDiameter, faceDiameter); 
 //
 //Left Eye
 //rect();
