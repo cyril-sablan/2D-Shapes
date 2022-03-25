@@ -20,8 +20,15 @@ if ( orientation=="Landscape or Square") {
 
 //
 //Variable Population
+rectFaceX = displayWidth*0;
+rectFaceY = displayHeight*0;
+rectFaceWidth = displayWidth;
+rectFaceHeight = displayHeight; 
+faceX = width*1/2;
+faceY = height*1/2;
+//faceDiameter = ;
 //
-//Face
+//Face: Circle = Inscribing a Circle in a Square 
 //Center a circle on display orientation
 rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
 ellipse(faceX, faceY, faceDiameter, faceDiameter); 
