@@ -1,4 +1,7 @@
 //Global Variables
+int smallerDisplayDimension;
+float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
+float faceX, faceY, faceDiameter; 
 //
 //Display Geometry
 fullScreen(); //displayWidth, displayHeight 
@@ -17,16 +20,16 @@ if ( orientation=="Landscape or Square") {
   println("Turn your phone"); //FUN
 }
 */
-
 //
 //Variable Population
+smallerDisplayDimension = height; //ALWAYS in Landscape 
 rectFaceX = displayWidth*0;
 rectFaceY = displayHeight*0;
-rectFaceWidth = displayWidth;
-rectFaceHeight = displayHeight; 
+rectFaceWidth = displayWidth; //Square Shape
+rectFaceHeight = displayHeight; //Square Shape 
 faceX = width*1/2;
 faceY = height*1/2;
-//faceDiameter = ;
+faceDiameter = displayWidth;
 //
 //Face: Circle = Inscribing a Circle in a Square 
 //Center a circle on display orientation
