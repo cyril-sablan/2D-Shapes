@@ -3,6 +3,7 @@ int smallerDisplayDimension;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter; 
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter; 
+float mouthX1, mouthX2, mouthY1, mouthY2;
 //
 //Display Geometry
 fullScreen(); //displayWidth, displayHeight 
@@ -37,7 +38,7 @@ leftEyeY = displayHeight*3/8;
 rightEyeY = leftEyeY; //BestPractice: change one line of code 
 eyeDiameter = smallerDisplayDimension*1/4;
 mouthX1 = leftEyeX;
-mouthY1 = displayWidth*3/4;
+mouthY1 = displayHeight*3/4;
 mouthX2 = rightEyeX;
 mouthY2 = mouthY1;
 //
@@ -56,6 +57,7 @@ ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 //
 //Nose
 //rect();
+triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
 //rect();
