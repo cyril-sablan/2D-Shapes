@@ -22,14 +22,14 @@ if ( orientation=="Landscape or Square") {
 */
 //
 //Variable Population
-smallerDisplayDimension = height; //ALWAYS in Landscape 
-rectFaceX = displayWidth*0;
+smallerDisplayDimension = displayHeight; //ALWAYS in Landscape 
+rectFaceX = displayWidth*1/2;
 rectFaceY = displayHeight*0;
-rectFaceWidth = displayWidth; //Square Shape
-rectFaceHeight = displayHeight; //Square Shape 
-faceX = width*1/2;
-faceY = height*1/2;
-faceDiameter = displayWidth;
+rectFaceWidth = smallerDisplayDimension; //Square Shape
+rectFaceHeight = smallerDisplayDimension; //Square Shape 
+faceX = displayWidth*1/2;
+faceY = displayHeight*1/2;
+faceDiameter = smallerDisplayDimension;
 //
 //Face: Circle = Inscribing a Circle in a Square 
 //Center a circle on display orientation
