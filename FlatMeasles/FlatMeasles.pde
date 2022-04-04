@@ -32,15 +32,15 @@ if ( orientation=="Landscape or Square") {
 //Variable Population
 smallerDisplayDimension = appHeight; //ALWAYS in Landscape 
 reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"
-rectFaceX = (displayWidth*1/2) - (smallerDisplayDimension*1/2);
+rectFaceX = (appWidth*1/2) - (smallerDisplayDimension*1/2);
 rectFaceY = appHeight*0;
 rectFaceWidth = smallerDisplayDimension; //Square Shape
 rectFaceHeight = smallerDisplayDimension; //Square Shape 
-faceX = displayWidth*1/2;
+faceX = appWidth*1/2;
 faceY = appHeight*1/2;
 faceDiameter = smallerDisplayDimension;
-leftEyeX = displayWidth*5/8;
-rightEyeX = displayWidth*3/8;
+leftEyeX = appWidth*5/8;
+rightEyeX = appWidth*3/8;
 leftEyeY = appHeight*3/8;
 rightEyeY = leftEyeY; //BestPractice: change one line of code 
 eyeDiameter = smallerDisplayDimension*1/4;
@@ -80,5 +80,11 @@ line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset); //
 //
 //Measle
+float measleX = appWidth*1/2;
+float measleY = appHeight*1/2;
+float measleDiameter = smallerDisplayDimension*1/100; //Very small measle 
+color red=#FF0000, measleColor=red;
 //rect();
-//ellipse(); //random values given other variables (similar to button code)
+//random values given other variables (similar to button code)
+fill(measleColor);
+ellipse( measleX, measleY, measleDiameter, measleDiameter ); 
