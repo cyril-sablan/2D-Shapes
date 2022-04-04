@@ -77,14 +77,18 @@ triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //rect();
 strokeWeight(mouthOpen); //testing: mouthOpen=height*1/4
 line(mouthX1, mouthY1, mouthX2, mouthY2);
-strokeWeight(reset); //
+strokeWeight(reset); //reset to 1pixel
 //
 //Measle
-float measleX = appWidth*1/2;
-float measleY = appHeight*1/2;
-float measleDiameter = smallerDisplayDimension*1/100; //Very small measle 
-color red=#FF0000, measleColor=red;
+float measleDiameter = smallerDisplayDimension*1/50; //Range of measle size: small=*1/100, large=4xbigger (*1/25)
+float measleRadius = measleDiameter*1/2;
+float measleX = random( measleRadius , appWidth-measleRadius );
+float measleY = random( measleRadius , appHeight-measleRadius );
+color red=#FF0000, measleColor=red, blackReset=#030303; //Note: need range here too 
 //rect();
 //random values given other variables (similar to button code)
+noStroke(); //Shape outline
 fill(measleColor);
 ellipse( measleX, measleY, measleDiameter, measleDiameter ); 
+stroke(reset); //reset to 1 pixel
+fill(blackReset); //reset to first color 
