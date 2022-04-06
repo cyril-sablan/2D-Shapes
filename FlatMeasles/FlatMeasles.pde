@@ -92,7 +92,7 @@ float measleY = random( rectFaceY+measleRadius , (( rectFaceY+rectFaceHeight) - 
 //color red=#FF0000, measleColor=red, blackReset=#030303; //Note: need range here too 
 Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
 color measleColor = ( nightMode==false ) ? color ( 255, random(0,50), random(120) ) : color( 255, random(0,50), 0 ) ; //ternary operator for day:night
-color blackReset=#030303; 
+color whiteReset=#FFFFFF; 
 //
 float measleRectX = measleX-measleDiameter*1/2;
 float measleRectY = measleY-measleDiameter*1/2;
@@ -104,4 +104,4 @@ noStroke(); //Shape outline
 fill(measleColor);
 ellipse( measleX, measleY, measleDiameter, measleDiameter ); 
 stroke(reset); //reset to 1 pixel
-fill(blackReset); //reset to first color 
+fill(whiteReset); //reset to first color 
