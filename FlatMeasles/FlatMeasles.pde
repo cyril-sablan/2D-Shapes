@@ -20,7 +20,7 @@ println(appWidth, appWidth); //Canvas Flexibility
 String ls="Landscape or Scare", p="Portrait", DO="Display Orientation:", instruct="Bruhh, turn your phone";
 String orientation = ( width >= height ) ? "Landscape or Square": "Portrati"; //Ternary Operator, repeats IF-ELSE
 println(DO, orientation); //Verification of value
-if ( orientation=="Portrait" ) println("Turn your phone"); 
+if ( orientation==p ) println(instruct); 
 /*
 if ( orientation=="Landscape or Square") {
   //Empty IF
@@ -92,11 +92,13 @@ float measleY = random( rectFaceY+measleRadius , (( rectFaceY+rectFaceHeight) - 
 //color red=#FF0000, measleColor=red, blackReset=#030303; //Note: need range here too 
 Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
 color measleColor = ( nightMode==false ) ? color ( 255, random(0,50), random(120) ) : color( 255, random(0,50), 0 ) ; //ternary operator for day:night
-//
 color blackReset=#030303; 
 //
-//
-//rect();
+float measleRectX = measleX-measleDiameter*1/2;
+float measleRectY = measleY-measleDiameter*1/2;
+float measleWidth = measleDiameter;
+float measleHeight = measleDiameter;
+rect( measleRectX, measleRectY, measleWidth, measleHeight );
 //random values given other variables (similar to button code)
 noStroke(); //Shape outline
 fill(measleColor);
