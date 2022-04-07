@@ -1,5 +1,5 @@
 void population() {
-    //Variable Population
+  //Variable Population
   smallerDisplayDimension = appHeight; //ALWAYS in Landscape 
   reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"
   rectFaceX = (appWidth*1/2) - (smallerDisplayDimension*1/2);
@@ -26,4 +26,5 @@ void population() {
   xNose3 = faceX + leftEyeY*1/4;
   yNose3 = faceY ;
   //
+  //End Population
 }
