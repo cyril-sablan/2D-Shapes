@@ -22,7 +22,7 @@ void measleDraw() {
   //random values given other variables (similar to button code)
   noStroke(); //Shape outline
   fill(measleColor);
-  ellipse( measleX, measleY, measleDiameter, measleDiameter ); 
+  ellipse( measleX, measleY, measleDiameter, measleDiameter); 
   stroke(reset); //reset to 1 pixel
   fill(whiteReset); //reset to first color
   //
