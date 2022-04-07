@@ -1,8 +1,9 @@
 void displaySetup() {
   //Display Geometry
   //Landscape, not square or portrait 
-  int appWidth = displayWidth, appHeight = displayHeight;
   println (width, height, displayWidth, displayHeight); //Verification of values
+  appWidth = displayWidth;
+  appHeight = displayHeight;
   println(appWidth, appWidth); //Canvas Flexibility
   //Display Orientation: a few comparisons for IFS
   //Purpose: a few comparisions of IFs and ID orientation (similar to image() aspect ratio calculations)
