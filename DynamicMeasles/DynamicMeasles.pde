@@ -1,15 +1,10 @@
 //Global Variables
-int reset, smallerDisplayDimension, mouthOpen;
-float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
-float faceX, faceY, faceDiameter; 
-float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter; 
-float mouthX1, mouthX2, mouthY1, mouthY2;
-float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
-//
-float measleDiameter, measleRadius, measleX, measleY;
+int appWidth, appHeight;
+int reset, smallerDisplayDimension;
+color whiteReset;
 Boolean nightMode=false;
-color measleColor, whiteReset;
-float measleRectX, measleRectY, measleWidth, measleHeight;
+//
+float eyeDiameter; 
 //
 void setup() 
 {
