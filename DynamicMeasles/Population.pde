@@ -2,10 +2,10 @@ void population() {
   //Variable Population
   smallerDisplayDimension = appHeight; //ALWAYS in Landscape 
   reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"
-  rectFaceX = (appWidth*1/2) - (smallerDisplayDimension*1/2);
-  rectFaceY = appHeight*0;
-  rectFaceWidth = smallerDisplayDimension; //Square Shape
-  rectFaceHeight = smallerDisplayDimension; //Square Shape 
+  rectFaceX = (appWidth*5/9) - (smallerDisplayDimension*1/2);
+  rectFaceY = appHeight*1/10;
+  rectFaceWidth = smallerDisplayDimension*3/4; //Square Shape
+  rectFaceHeight = smallerDisplayDimension*4/5; //Square Shape 
   faceX = appWidth*1/2;
   faceY = appHeight*1/2;
   faceDiameter = smallerDisplayDimension;
